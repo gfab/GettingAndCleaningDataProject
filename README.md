@@ -53,13 +53,14 @@ Raw data measurements are contained in the *X_train.txt* and *X_test.txt* files.
 
 Following is a picture that illustrates how the initial data frame is created from the data in these files: https://github.com/gfab/GettingAndCleaningDataProject/blob/master/picture.pdf.
 
-The flow of the script is as follows:
-1. read in the list of feature names, strip out invalid characters and duplicate "Body"
-2. generate a list of features to keep by searching for "mean" or "std" in the feature names (ignoring case)
-3. read in X_train and X_test data, bind together (only the columns to be kept) by row, and assign corresponding feature names as column names in this data frame
-4. read the activity values from y_train and y_test, bind these together by row, and set the column name to "activity"
-5. read the activity labels from the second column of *activity.txt* and then assign those as the labels for the "activity" column, which is a factor variable
-6. read the subject values from subject_train and subject_test, bind these together by row, and set the column name to "subject"
-7. bind together the subject, activity, and measurement data frames by column
-8. create a data frame of tidy data by using the aggregate function to compute averages of the measurement columns, by subject and activity
-9. write the tidy data frame to a file called *tidy.txt* using the **write.table** function  
+The flow of the script is as follows:<br/>
+1. read in the list of feature names, strip out invalid characters and duplicate "Body"<br/>
+2. generate a list of features to keep by searching for "mean" or "std" in the feature names (ignoring case)<br/>
+3. read in X_train and X_test data, bind together (only the columns to be kept) by row, and assign corresponding feature names as column names in this data frame<br/>
+4. read the activity values from y_train and y_test, bind these together by row, and set the column name to "activity"<br/>
+5. read the activity labels from the second column of *activity.txt* and then assign those as the labels for the "activity" column, which is a factor variable<br/>
+6. read the subject values from subject_train and subject_test, bind these together by row, and set the column name to "subject"<br/>
+7. bind together the subject, activity, and measurement data frames by column<br/>
+8. create a data frame of tidy data by using the aggregate function to compute averages of the measurement columns, by subject and activity<br/>
+9. write the tidy data frame to a file called *tidy.txt* using the **write.table** function<br/>
+10. 
