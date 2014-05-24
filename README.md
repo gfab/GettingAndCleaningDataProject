@@ -1,4 +1,4 @@
-DME# Getting and Cleaning Data Project #
+# Getting and Cleaning Data Project #
 ## Project Summary ##
 The goal of this project is to load, process, and clean up a data set using techniques learned via the video lectures, quizzes, and independent learning.  The ultimate output of this project is documentation and a tidy data set.
 
@@ -63,4 +63,3 @@ The flow of the script is as follows:<br/>
 7. bind together the subject, activity, and measurement data frames by column<br/>
 8. create a data frame of tidy data by using the aggregate function to compute averages of the measurement columns, by subject and activity<br/>
 9. write the tidy data frame to a file called *tidy.txt* using the **write.table** function<br/>
-10. 
