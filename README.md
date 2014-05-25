@@ -22,10 +22,12 @@ I downloaded the data set on May 18, 2014 at 6:04pm EDT.
 ## Input/Output ##
 The results of this analysis can be reproduced by loading the original dataset and running the analysis script as described below.  In order for this to work properly the original dataset must be loaded and unpacked.  This may be done by downloading the zip file located at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.  Once downloaded the file must be unzipped, which will create a folder called "UCI HAR Dataset."  The analysis script will run properly as long as this data folder is in the folder from which the script is run.
 
-The analysis script will create a file called "tidy.txt" which contains a tidy data set containing the average values per subject/activity combination.  This file may be read into a variable called **tidy** in R using the R command **tidy<-read.table("tidy.txt")**.  
+The analysis script will create a file called "tidy.txt" which contains a tidy data set containing the average values per subject/activity combination.  This file may be read into a variable called **tidy** in R using the R command **tidy<-read.table("tidy.txt")**.
+
+The output tidy data file is [here](https://github.com/gfab/GettingAndCleaningDataProject/blob/master/tidy.txt).  
 
 ## Analysis Script ##
-There is a single analysis script, run_analysis.R, that reads the data, performs data transformation, and creates the output file containing the tidy data set.
+There is a single analysis script, run_analysis.R, that reads the data, performs data transformation, and creates the output file containing the tidy data set.  The script is [here](https://github.com/gfab/GettingAndCleaningDataProject/blob/master/run_analysis.R).
 
 The data set is composed of several data files spread across several folders.  Following are the pertinent input files and folder structure used in the analysis.  Folder names are  **bold** and data files are  *italic*.
 
